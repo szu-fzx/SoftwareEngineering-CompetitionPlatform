@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.wuyou.mapper.UserMapper">
+    <resultMap type="com.example.wuyou.model.entity.User" id="UserMap">
+        <result property="id" column="id" jdbcType="CHAR"/>
+        <result property="openId" column="open_id" jdbcType="VARCHAR"/>
+        <result property="username" column="username" jdbcType="VARCHAR"/>
+        <result property="password" column="password" jdbcType="VARCHAR"/>
+        <result property="mobile" column="mobile" jdbcType="CHAR"/>
+        <result property="avatar" column="avatar" jdbcType="VARCHAR"/>
+        <result property="role" column="role" jdbcType="SMALLINT"/>
+        <result property="companyId" column="company_id" jdbcType="CHAR"/>
+        <result property="enableStatus" column="enable_status" jdbcType="BOOLEAN"/>
+        <result property="authId" column="auth_id" jdbcType="CHAR"/>
+        <result property="registerDate" column="register_date" jdbcType="DOUBLE"/>
+    </resultMap>
+</mapper>
