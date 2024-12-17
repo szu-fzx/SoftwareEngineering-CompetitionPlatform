@@ -26,6 +26,10 @@ mybatis-plus:
     map-underscore-to-camel-case: true
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
 
-
+alioss:
+  endpoint: oss-cn-shenzhen.aliyuncs.com
+  access-key-id: LTAI5tD8P5qF5upqPGe1KCkE
+  access-key-secret: nrO0FHNURHhhePdBATdoN3nWbeJHI6
+  bucket-name: competition-platform
 
 

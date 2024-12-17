@@ -6,6 +6,7 @@ import static com.example.wuyou.constant.WXConfigConstant.SECRET;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
+import com.example.wuyou.constant.WXConfigConstant;
 import com.example.wuyou.model.dto.LoginResponse;
 import com.example.wuyou.model.dto.PageListResponse;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -48,8 +49,8 @@ public class UserServiceImpl implements UserService{
 
     public GetOpenIdResponse getOpenId(String codeId){
         RestTemplate restTemplate = new RestTemplate();
-        String url = CODE_URL + APP_ID +
-                "&secret=" + SECRET +
+        String url = CODE_URL + WXConfigConstant.APP_ID +
+                "&secret=" + WXConfigConstant.SECRET +
                 "&js_code=" + codeId +
                 "&grant_type=authorization_code";
 
