@@ -35,6 +35,16 @@ public class ResumeVo implements Serializable,Cloneable {
     /** 性别 */
     @ApiModelProperty(name = "性别", notes = "")
     private GenderEnum gender;
+    @ApiModelProperty(name = "家乡", notes = "")
+    private String hometown;
+    @ApiModelProperty(name = "认证学校", notes = "")
+    private String college;
+    @ApiModelProperty(name = "认证身份", notes = "")
+    private String college_state;
+    @ApiModelProperty(name = "入学年份", notes = "")
+    private String college_year;
+    @ApiModelProperty(name = "手机号", notes = "")
+    private String phone;
     /** 最高学历 */
     @ApiModelProperty(name = "最高学历", notes = "")
     private EducationEnum education;
@@ -72,5 +82,6 @@ public class ResumeVo implements Serializable,Cloneable {
     /** 意向岗位 */
     @ApiModelProperty(name = "意向岗位", notes = "")
     private String postName;
+
 
 }
